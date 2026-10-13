@@ -401,7 +401,7 @@ function NoteCard({ note }: { note: Note }) {
             </li>
           ))}
         </ul>
-        <form data-testid={`comment-form-${note.id}`} onSubmit={comment}>
+        <form className="form" data-testid={`comment-form-${note.id}`} onSubmit={comment}>
           <label>
             Escribir en la nota
             <textarea rows={2} value={body} onChange={(event) => setBody(event.target.value)} />
